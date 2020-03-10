@@ -1,0 +1,181 @@
+# Version of the Icarus theme that is currently used
+version: 2.3.0
+# 你的网站图标，可以搜索在线图标制作，并将其放在images文件夹中
+favicon: /images/favicons.ico
+# Path or URL to RSS atom.xml
+rss: /atom.xml
+# 显示在导航栏左侧的网站logo，同样可以自己制作
+logo: /images/gen.svg
+# Open Graph metadata
+# https://hexo.io/docs/helpers.html#open-graph
+open_graph:
+    # Facebook App ID
+    fb_app_id: 
+    # Facebook Admin ID
+    fb_admins: 
+    # Twitter ID
+    twitter_id: 
+    # Twitter site
+    twitter_site: 
+    # Google+ profile link
+    google_plus: 
+#  导航栏
+navbar:
+    #菜单（显示名称：对应文件夹）
+    menu:
+        主页: /
+        归档: /archives
+        分类: /categories
+        标签: /tags
+        关于: /about   
+    # 导航栏右侧图标链接
+    links:
+        My GitHub:
+            icon: fab fa-github
+            url: '你的gityhub地址'
+# Footer section link settings
+footer:
+    # 页脚图标链接
+    links:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: 'https://creativecommons.org/'
+        Attribution 4.0 International:
+            icon: fab fa-creative-commons-by
+            url: 'https://creativecommons.org/licenses/by/4.0/'
+        Download on GitHub:
+            icon: fab fa-github
+            url: 'http://github.com/ppoffice/hexo-theme-icarus'
+# 文章显示设置
+article:
+    # Code highlight theme
+    # https://github.com/highlightjs/highlight.js/tree/master/src/styles
+    #代码主题atom-one-light亮色，atom-one-dark暗色
+    highlight: atom-one-dark
+    # 是否显示文章主图
+    thumbnail: true
+    # 是否显示估算阅读时间
+    readtime: true
+# 搜索插件设置
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Search-Plugins
+search:
+    # Name of the search plugin
+    type: insight
+# 评论插件设置
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Comment-Plugins
+comment:
+    #可选valine，disqus（科学上网）等
+    # Name of the comment plugin
+    #type: valine
+    #app_id: 不为空
+    #app_key: 不为空
+    #notify: true
+    #verify: true
+    #placeholder:
+    type: disqus
+    shortname: 不能为空
+# 打赏功能
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
+donate:
+    -
+        # 阿里巴巴支付宝
+        type: alipay
+        # 二维码图片
+        qrcode: '/images/honbao.PNG'
+    -
+        # 微信
+        type: wechat
+        # 二维码图片
+        qrcode: '/images/yjtp.png'
+    -
+# 分享插件设置
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Share-Plugins
+share:
+    # 插件类型，有多种，可选，自行百度
+    type: sharejs
+# Sidebar settings.
+# Please be noted that a sidebar is only visible when it has at least one widget
+sidebar:
+    # 左侧边栏设置
+    left:
+        # 是否不随页面滚动
+        # http://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/make-a-sidebar-sticky-when-page-scrolls/
+        sticky: false
+    # 右侧边栏设置
+    right:
+        # 是否不随页面滚动
+        # http://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/make-a-sidebar-sticky-when-page-scrolls/
+        sticky: false
+# 边栏小部件设置
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
+widgets:
+    -
+        # 个人信息
+        type: profile
+        # 部件位置（左）
+        position: left
+        # 作者名（字符串）
+        author: 飞鱼
+        # 作者身份描述（字符串）
+        author_title: Student
+        # 作者当前居住地
+        location: China,Fujian
+        # 头像（可用本地图片或网络图片链接）
+        avatar: '/images/ava.png'
+        # Email address for the Gravatar to be shown in the profile widget
+        gravatar: 
+        # 关注我的链接，可设为你的GitHub主页
+        follow_link: 'https://github.com/yourname'
+        # 个人介绍部件底部图标社交链接
+        social_links:
+            Github:
+                icon: fab fa-github
+                url: 'https://github.com/yourname'
+            Facebook:
+                icon: fab fa-facebook
+                url: 'https://facebook.com'
+            Twitter:
+                icon: fab fa-twitter
+                url: 'https://twitter.com/yourname'
+            RSS:
+                icon: fas fa-rss
+                url: /
+    -
+        # Widget name
+        type: toc
+        # Where should the widget be placed, left or right
+        position: left
+    -
+        # 分类
+        type: category
+        # 位置指定
+        position: left
+    -
+        # 标签云
+        type: tagcloud
+        # 位置
+        position: right
+    -
+        # 近期文章
+        type: recent_posts
+        # 位置
+        position: left
+    -
+        # 归档
+        type: archive
+        # Where should the widget be placed, left or right
+        position: right
+    -
+        # 标签
+        type: tag
+        # Where should the widget be placed, left or right
+        position: right
+    -
+        # 外部链接
+        type: links
+        # Where should the widget be placed, left or right
+        position: left
+        # Links to be shown in the links widget
+        links:
+            Google: 'https://google.com'
+            Baidu: 'https://baidu.com'
